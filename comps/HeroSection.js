@@ -85,9 +85,8 @@ const ContentSection = () => {
     <div>
       {/* Today's Specials Section */}
       <section className="text-center my-8">
-        <h2 className="text-3xl font-bold mb-6 border-b-4 border-black inline-block">Today's Specials
-
-        </h2>
+        <img src="/leaf.png" alt="Leaf Icon" className="mx-auto w-8 h-8 mb-4" />
+        <h2 className="text-3xl font-bold mb-6 border-b-4 border-black inline-block">Today's Specials</h2>
         <div className="flex flex-col md:flex-row items-center justify-center gap-8">
           <img
             src="/grilled.jpg"
@@ -105,6 +104,7 @@ const ContentSection = () => {
 
       {/* Meet Our Team Section */}
       <section className="text-center my-8">
+        <img src="/leaf.png" alt="Leaf Icon" className="mx-auto w-8 h-8 mb-4" />
         <h2 className="text-3xl font-bold mb-6 border-b-4 border-black inline-block">Meet Our Team</h2>
         <div className="flex flex-col md:flex-row items-center justify-center gap-8">
           <img
@@ -121,6 +121,7 @@ const ContentSection = () => {
 
       {/* Our Location Section */}
       <section className="text-center my-8">
+        <img src="/leaf.png" alt="Leaf Icon" className="mx-auto w-8 h-8 mb-4" />
         <h2 className="text-3xl font-bold mb-6 border-b-4 border-black inline-block">Our Location</h2>
         <div className="w-full h-[400px]">
           <iframe

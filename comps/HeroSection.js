@@ -30,7 +30,7 @@ const HeroSection = () => {
           Gweru's Finest Restaurant!
         </h1>
         <p className="text-xl md:text-2xl mb-6 drop-shadow-md">Kitchen X Cafe</p>
-        
+
         {/* Buttons */}
         <div className="flex flex-wrap justify-center gap-4">
           <button className="w-40 px-6 py-3 text-lg font-semibold text-black bg-white shadow-md hover:bg-gray-300 transition-all">
@@ -85,35 +85,43 @@ const ContentSection = () => {
     <div>
       {/* Today's Specials Section */}
       <section className="text-center my-8">
-        <h2 className="text-3xl font-bold mb-6">Today's Specials</h2>
-        <div className="flex items-center justify-center gap-8">
+        <h2 className="text-3xl font-bold mb-6 border-b-4 border-black inline-block">Today's Specials
+
+        </h2>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+          <img
+            src="/grilled.jpg"
+            alt="Grilled Salmon"
+            className="w-60 h-60 object-cover rounded-lg shadow-md"
+          />
           <div>
             <h3 className="text-xl font-semibold">Grilled Salmon</h3>
-            <p className="text-gray-700">Freshly grilled salmon served with lemon butter sauce and seasonal veggies.</p>
+            <p className="text-gray-700">
+              Freshly grilled salmon served with lemon butter sauce and seasonal veggies.
+            </p>
           </div>
-          <img src="/grilled.jpg" alt="Grilled Salmon" className="w-40 h-40 object-cover shadow-md" />
         </div>
       </section>
 
       {/* Meet Our Team Section */}
       <section className="text-center my-8">
-        <h2 className="text-3xl font-bold mb-6">Meet Our Team</h2>
-        <div className="flex items-center justify-center gap-8">
+        <h2 className="text-3xl font-bold mb-6 border-b-4 border-black inline-block">Meet Our Team</h2>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+          <img
+            src={teamProfiles[currentProfile].image}
+            alt={teamProfiles[currentProfile].name}
+            className="w-60 h-60 object-cover rounded-lg shadow-md"
+          />
           <div>
             <h3 className="text-xl font-semibold">{teamProfiles[currentProfile].name}</h3>
             <p className="text-gray-700">{teamProfiles[currentProfile].expertise}</p>
           </div>
-          <img
-            src={teamProfiles[currentProfile].image}
-            alt={teamProfiles[currentProfile].name}
-            className="w-40 h-40 object-cover shadow-md"
-          />
         </div>
       </section>
 
       {/* Our Location Section */}
       <section className="text-center my-8">
-        <h2 className="text-3xl font-bold mb-6">Our Location</h2>
+        <h2 className="text-3xl font-bold mb-6 border-b-4 border-black inline-block">Our Location</h2>
         <div className="w-full h-[400px]">
           <iframe
             title="Pallet Garden Cafe Location"
@@ -136,3 +144,4 @@ export default () => (
     <ContentSection />
   </div>
 );
+

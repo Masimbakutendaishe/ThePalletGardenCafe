@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Navbar = () => {
   return (
-    <div className="relative flex justify-between items-center px-5 py-3 bg-white w-full">
+    <div className="relative flex justify-between items-center px-5 py-3 bg-white w-full sticky top-0 z-50 shadow-md">
       {/* Logo */}
       <div className="logo">
         <Image src="/logo.jpg" alt="The Pallet Garden Cafe Logo" width={50} height={50} />

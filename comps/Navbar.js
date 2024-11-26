@@ -21,7 +21,7 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger Icon and Dropdown */}
-      <div className="absolute left-[calc(50%+300px)]">
+      <div className="absolute md:left-[calc(50%+300px)] right-5">
         <div className="relative flex flex-col items-center">
           {/* Hamburger Icon */}
           <div
@@ -47,8 +47,11 @@ const Navbar = () => {
 
           {/* Dropdown Menu */}
           {isMenuOpen && (
-            <div className="absolute top-10 w-48 bg-white bg-opacity-90 shadow-lg">
-              <ul className="text-black font-medium text-center"> {/* Added text-center */}
+            <div
+              className="absolute top-10 w-48 bg-white bg-opacity-90 shadow-lg 
+                md:left-1/2 md:transform md:-translate-x-1/2 md:right-auto right-0"
+            >
+              <ul className="text-black font-medium text-center">
                 <li className="px-4 py-2 hover:bg-gray-200 transition-all">
                   <a href="/food-menu">Food Menu</a>
                 </li>
@@ -68,7 +71,7 @@ const Navbar = () => {
       </div>
 
       {/* Social Icons */}
-      <div className="flex space-x-4">
+      <div className="hidden sm:flex space-x-4">
         <Image src="/facebook.png" alt="Facebook" width={20} height={20} className="cursor-pointer" />
         <Image src="/instagram.png" alt="Instagram" width={20} height={20} className="cursor-pointer" />
       </div>

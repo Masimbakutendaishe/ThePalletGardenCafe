@@ -63,7 +63,7 @@ const Navbar = () => {
                   <a href="/FoodMenuPage">Food Menu</a>
                 </li>
                 <li className="px-4 py-2 hover:bg-gray-200 transition-all">
-                  <a href="/drinks-menu">Drinks Menu</a>
+                  <a href="/DrinksMenuPage">Drinks Menu</a>
                 </li>
                 <li className="px-4 py-2 hover:bg-gray-200 transition-all">
                   <a href="/place-order">Place Order</a>

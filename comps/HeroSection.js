@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const HeroSection = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -33,12 +34,16 @@ const HeroSection = () => {
 
         {/* Buttons */}
         <div className="flex flex-wrap justify-center gap-4">
+        <Link href="/FoodMenuPage">
           <button className="w-40 px-6 py-3 text-lg font-semibold text-black bg-white shadow-md hover:bg-gray-300 transition-all">
             Food Menu
           </button>
+          </Link>
+          <Link href="/DrinksMenuPage">
           <button className="w-40 px-6 py-3 text-lg font-semibold text-black bg-white shadow-md hover:bg-gray-300 transition-all">
             Drinks Menu
           </button>
+          </Link>
         </div>
         <div className="flex flex-wrap justify-center gap-4 mt-4">
           <button className="w-40 px-6 py-3 text-lg font-semibold text-black bg-white shadow-md hover:bg-gray-300 transition-all">

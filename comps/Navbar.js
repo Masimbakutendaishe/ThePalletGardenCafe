@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,14 +12,20 @@ const Navbar = () => {
   return (
     <div className="relative flex justify-between items-center px-5 py-3 bg-white w-full sticky top-0 z-50 shadow-md">
       {/* Left Logo */}
+      <Link href="/">
       <div className="logo">
         <Image src="/logo.jpg" alt="The Pallet Garden Cafe Logo" width={50} height={50} />
       </div>
+      </Link>
 
       {/* Centered Logo (logowhite.png) */}
+      
       <div className="absolute left-1/2 transform -translate-x-1/2">
+      <Link href="/">
         <Image src="/logowhite.png" alt="Centered Logo" height={50} width={209} />
+    </Link>
       </div>
+     
 
       {/* Hamburger Icon and Dropdown */}
       <div className="absolute md:left-[calc(50%+300px)] right-5">
@@ -53,7 +60,7 @@ const Navbar = () => {
             >
               <ul className="text-black font-medium text-center">
                 <li className="px-4 py-2 hover:bg-gray-200 transition-all">
-                  <a href="/food-menu">Food Menu</a>
+                  <a href="/FoodMenuPage">Food Menu</a>
                 </li>
                 <li className="px-4 py-2 hover:bg-gray-200 transition-all">
                   <a href="/drinks-menu">Drinks Menu</a>

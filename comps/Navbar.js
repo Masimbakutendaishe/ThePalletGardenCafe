@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="relative flex justify-between items-center px-5 py-3 bg-white w-full sticky top-0 z-50 shadow-md">
+    <div className=" flex justify-between items-center px-5 py-3 bg-white w-full sticky top-0 z-50 shadow-md">
       {/* Left Logo */}
       <Link href="/">
         <div className="logo">

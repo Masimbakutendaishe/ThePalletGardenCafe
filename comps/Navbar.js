@@ -13,24 +13,41 @@ const Navbar = () => {
     <div className="relative flex justify-between items-center px-5 py-3 bg-white w-full sticky top-0 z-50 shadow-md">
       {/* Left Logo */}
       <Link href="/">
-      <div className="logo">
-        <Image src="/logo.jpg" alt="The Pallet Garden Cafe Logo" width={50} height={50} />
-      </div>
+        <div className="logo">
+          <Image src="/logo.jpg" alt="The Pallet Garden Cafe Logo" width={50} height={50} />
+        </div>
       </Link>
 
-      {/* Centered Logo (logowhite.png) */}
-      
-      <div className="absolute left-1/2 transform -translate-x-1/2">
-      <Link href="/">
-        <Image src="/logowhite.png" alt="Centered Logo" height={50} width={209} />
-    </Link>
+      {/* Center Section */}
+      <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center space-x-6">
+        {/* Centered Logo (logowhite.png) */}
+        <Link href="/">
+          <Image 
+            src="/logowhite.png" 
+            alt="Centered Logo" 
+            height={50} 
+            width={209} 
+            className="hidden sm:block" // Adjust the logo for smaller screens
+          />
+          <Image 
+            src="/logowhite.png" 
+            alt="Centered Logo" 
+            height={40} 
+            width={150} 
+            className="sm:hidden" // Adjust the logo for smaller screens
+          />
+        </Link>
       </div>
-     
 
       {/* Hamburger Icon and Dropdown */}
-      <div className="absolute md:left-[calc(50%+300px)] right-5">
+      <div className="absolute md:left-[calc(50%+300px)] right-5 flex items-center space-x-6">
+        {/* Cart Icon */}
+        <div className="cart-icon md:block sm:hidden">
+          <Image src="/cart.png" alt="Cart Icon" height={30} width={35} />
+        </div>
+
+        {/* Hamburger Icon */}
         <div className="relative flex flex-col items-center">
-          {/* Hamburger Icon */}
           <div
             className="cursor-pointer flex flex-col justify-between h-6 w-8"
             onClick={toggleMenu}

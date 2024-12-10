@@ -46,9 +46,11 @@ const HeroSection = () => {
           </Link>
         </div>
         <div className="flex flex-wrap justify-center gap-4 mt-4">
+        <Link href="ProductsPage">
           <button className="w-40 px-6 py-3 text-lg font-semibold text-black bg-white shadow-md hover:bg-gray-300 transition-all">
             Place Order
           </button>
+        </Link>
           <button className="w-40 px-6 py-3 text-lg font-semibold text-black bg-white shadow-md hover:bg-gray-300 transition-all">
             Today's Specials
           </button>

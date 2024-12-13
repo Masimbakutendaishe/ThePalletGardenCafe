@@ -59,7 +59,7 @@ const Add = ({ setClose }) => {
         >
           X
         </span>
-        <h1 className="text-lg font-bold mb-4">Add a new Pizza</h1>
+        <h1 className="text-lg font-bold mb-4">Add a new Item</h1>
         <div className="mb-4">
           <label className="block mb-2 font-medium">Choose an image</label>
           <input
@@ -126,7 +126,7 @@ const Add = ({ setClose }) => {
             />
             <button
               onClick={handleExtra}
-              className="bg-teal-500 text-white px-4 py-2 rounded-md"
+              className="bg-teal-100 text-white px-4 py-2 rounded-md"
             >
               Add
             </button>
@@ -135,7 +135,7 @@ const Add = ({ setClose }) => {
             {extraOptions.map((option, index) => (
               <span
                 key={index}
-                className="px-3 py-1 text-sm border border-red-500 bg-white text-red-500 rounded-full cursor-pointer"
+                className="px-3 py-1 text-sm border border-black bg-white text-black rounded-full cursor-pointer"
               >
                 {option.text}
               </span>
@@ -144,7 +144,7 @@ const Add = ({ setClose }) => {
         </div>
         <button
           onClick={handleCreate}
-          className="self-end bg-teal-600 text-white py-2 px-6 rounded-md"
+          className="self-end bg-teal-50 text-black py-2 px-6 rounded-md"
         >
           Create
         </button>

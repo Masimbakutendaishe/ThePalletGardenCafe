@@ -51,9 +51,11 @@ const HeroSection = () => {
             Place Order
           </button>
         </Link>
+        <Link href="/">
           <button className="w-40 px-6 py-3 text-lg font-semibold text-black bg-white shadow-md hover:bg-gray-300 transition-all">
             Today's Specials
           </button>
+        </Link>
         </div>
       </div>
     </div>

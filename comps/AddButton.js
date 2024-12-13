@@ -2,9 +2,9 @@ const AddButton = ({ setClose }) => {
     return (
       <div
         onClick={() => setClose(false)}
-        className="bg-red-600 text-white font-medium text-center py-2 px-4 rounded-lg cursor-pointer hover:bg-red-700 transition-all"
+        className="bg-white text-black font-medium text-center py-2 px-4 rounded-lg shadow cursor-pointer hover:bg-gray-300 transition-all"
       >
-        Add New Pizza
+        Add New Item
       </div>
     );
   };

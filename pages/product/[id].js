@@ -46,7 +46,7 @@ const Product = ({ item }) => {
       </div>
       <div className="flex-1 p-5">
         <h1 className="text-2xl font-bold mb-4">{item.title}</h1>
-        <span className="text-lg font-medium text-red-600 border-b border-red-600 mb-4 block">
+        <span className="text-lg font-medium text-black border-b border-black mb-4 block">
           ${price}
         </span>
         <p className="mb-6">{item.desc}</p>

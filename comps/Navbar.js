@@ -45,12 +45,14 @@ const Navbar = () => {
       {/* Hamburger Icon and Dropdown */}
       <div className="absolute md:left-[calc(50%+300px)] right-5 flex items-center space-x-6">
         {/* Cart Icon */}
+        <Link href="/CartPage">
         <div className="cart-icon relative md:block sm:hidden">
           <Image src="/cart.png" alt="Cart" width={30} height={30} />
             <div className="absolute top-[-10px] right-[-10px] w-5 h-5 rounded-full bg-white p-1 flex items-center justify-center font-bold text-black">
                 {quantity}
             </div>
         </div>
+        </Link>
 
         {/* Hamburger Icon */}
         <div className="relative flex flex-col items-center">

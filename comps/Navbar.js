@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useSelector } from 'react-redux'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,6 +9,8 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
   };
+   
+  const quantity=useSelector(state=>state.cart.quantity)
 
   return (
     <div className=" flex justify-between items-center px-5 py-3 bg-white w-full sticky top-0 z-50 shadow-md">
@@ -42,8 +45,11 @@ const Navbar = () => {
       {/* Hamburger Icon and Dropdown */}
       <div className="absolute md:left-[calc(50%+300px)] right-5 flex items-center space-x-6">
         {/* Cart Icon */}
-        <div className="cart-icon md:block sm:hidden">
-          <Image src="/cart.png" alt="Cart Icon" height={30} width={35} />
+        <div className="cart-icon relative md:block sm:hidden">
+          <Image src="/cart.png" alt="Cart" width={30} height={30} />
+            <div className="absolute top-[-10px] right-[-10px] w-5 h-5 rounded-full bg-white p-1 flex items-center justify-center font-bold text-black">
+                {quantity}
+            </div>
         </div>
 
         {/* Hamburger Icon */}

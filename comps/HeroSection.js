@@ -28,7 +28,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">
-          Gweru's Finest Restaurant!
+          Gweru&apos;s Finest Restaurant!
         </h1>
         <p className="text-xl md:text-2xl mb-6 drop-shadow-md">Kitchen X Cafe</p>
 
@@ -53,7 +53,7 @@ const HeroSection = () => {
         </Link>
         <Link href="/">
           <button className="w-40 px-6 py-3 text-lg font-semibold text-black bg-white shadow-md hover:bg-gray-300 transition-all">
-            Today's Specials
+            Today&apos;s Specials
           </button>
         </Link>
         </div>

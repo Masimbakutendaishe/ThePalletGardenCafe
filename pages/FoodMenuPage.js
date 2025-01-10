@@ -105,7 +105,7 @@ const MenuItems = () => {
         </h2>
         <p className="text-lg text-gray-600">
           Welcome to our menu page! Feel free to browse through our delicious meals. 
-          Whether you're in the mood for something savory or sweet, we've got it all!
+          Whether you&apos;re in the mood for something savory or sweet, we&apos;ve got it all!
         </p>
       </section>
 

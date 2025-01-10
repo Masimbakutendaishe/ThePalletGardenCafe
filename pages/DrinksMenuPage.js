@@ -104,7 +104,7 @@ const MenuItems = () => {
           Our Drinks Menu
         </h2>
         <p className="text-lg text-gray-600">
-          Welcome to our drinks menu! Whether you're looking for a refreshing smoothie, a hot drink, or something sparkling, we've got you covered!
+          Welcome to our drinks menu! Whether you&apos;re looking for a refreshing smoothie, a hot drink, or something sparkling, we&apos;ve got you covered!
         </p>
       </section>
 

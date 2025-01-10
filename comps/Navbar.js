@@ -94,7 +94,7 @@ const Navbar = () => {
                   <a href="/ProductsPage">Place Order</a>
                 </li>
                 <li className="px-4 py-2 hover:bg-gray-200 transition-all">
-                  <a href="/todays-specials">Today's Specials</a>
+                  <a href="/todays-specials">Today&apos;s Specials</a>
                 </li>
               </ul>
             </div>

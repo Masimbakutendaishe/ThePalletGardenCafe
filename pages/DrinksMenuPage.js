@@ -12,11 +12,10 @@ const HeroSection = () => {
       setCurrentImage((prev) => (prev + 1) % images.length);
     }, 5000); // Change every 5 seconds
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]); // Include images.length in the dependency array
 
   return (
     <div className="relative w-full h-[400px] overflow-hidden">
-      {/* Slideshow Images */}
       {images.map((image, index) => (
         <div
           key={index}
@@ -27,13 +26,10 @@ const HeroSection = () => {
         ></div>
       ))}
 
-      {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">
           Drinks Menu
         </h1>
-
-        {/* Button for downloading the menu */}
         <a href="/drinks-menu.pdf" download>
           <button className="w-40 px-6 py-3 text-lg font-semibold text-black bg-white shadow-md hover:bg-gray-300 transition-all">
             Download Menu PDF
@@ -108,7 +104,6 @@ const MenuItems = () => {
         </p>
       </section>
 
-      {/* Fun Section */}
       <section className="flex mb-8 border-t-4 border-b-4">
         <div className="flex-1 p-6 text-center border-r-4">
           <h3 className="text-2xl font-semibold mb-4">Promotional Drinks</h3>
@@ -122,14 +117,12 @@ const MenuItems = () => {
         </div>
       </section>
 
-      {/* Fun Fact Section */}
       <section className="text-center mb-12">
         <h3 className="text-2xl font-bold mb-4">Today&apos;s Fun Fact!</h3>
         <p className="text-lg mb-4">Did you know? Drinking water can help improve your skin health!</p>
         <img src="/drink7.jpg" alt="Water" className="mx-auto w-32 h-32 object-cover rounded-full" />
       </section>
 
-      {/* Menu Items */}
       <div className="flex flex-wrap justify-center gap-8">
         {menuItems.map((item, index) => (
           <div key={index} className="w-full sm:w-60 md:w-72 p-4 bg-white rounded-lg shadow-lg">

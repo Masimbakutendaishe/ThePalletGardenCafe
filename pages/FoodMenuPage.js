@@ -4,7 +4,7 @@ const HeroSection = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
     '/food3.jpg', '/food4.jpg', '/food5.jpg', '/food6.jpg', 
-    '/food7.jpg', '/food7.jpg', '/food8.jpg'
+    '/food7.jpg', '/food4.jpg', '/food8.jpg'
   ];
 
   useEffect(() => {

@@ -16,7 +16,7 @@ const CartPage = () => {
   const [open, setOpen] = useState(false);
   const [cash, setCash] = useState(false);
   const amount = cart.total;
-  const currency = "USD";
+  const currency = "USD"; //Can be in ZiG
   const style = { layout: "vertical" };
   const dispatch = useDispatch();
   const router = useRouter();

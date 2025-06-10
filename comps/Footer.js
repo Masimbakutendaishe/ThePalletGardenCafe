@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="flex flex-col items-center">
               <h3 className="text-xl font-bold mb-4">About The Pallet Garden Cafe</h3>
               <p className="text-lg text-center">
-                Welcome to The Pallet Garden Cafe. A fun and friendly place to spend quality time with your friends and family in Gweru. Enjoy amazing food, good drinks, and a relaxing environment, perfect for everyone to enjoy.
+                Welcome to The Pallet Garden Cafe. A fun and friendly place to spend quality time with your friends and family, in Gweru. Enjoy amazing food, good drinks, and a relaxing environment, perfect for everyone to enjoy.
               </p>
             </div>
   
